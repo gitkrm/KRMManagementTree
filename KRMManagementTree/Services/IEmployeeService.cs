@@ -6,6 +6,6 @@ namespace KRMManagementTree.Services
     public interface IEmployeeService
     {
         // Would be set up async in real world
-        Employees Create(EmployeeDto dto);
+        Employees CreateNewEmployee(EmployeeDto dto);
     }
 }
