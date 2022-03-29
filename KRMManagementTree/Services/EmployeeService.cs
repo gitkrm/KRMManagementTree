@@ -7,7 +7,7 @@ namespace KRMManagementTree.Services
     public class EmployeeService : IEmployeeService
     {
         // This would be used for saving to DB implemented using DI
-        public Employees Create(EmployeeDto dto) =>
+        public Employees CreateNewEmployee(EmployeeDto dto) =>
            new Employees()
             {
                 Id = dto.Id,

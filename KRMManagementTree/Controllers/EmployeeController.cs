@@ -18,6 +18,7 @@ namespace KRMManagementTree.Controllers
 
         // List of employess
         public List<Employees> Employees { get; set; } = new List<Employees>();
+        readonly IEmployeeService _employeeService;
 
         // Default constructor for populating list of employees when called
         public EmployeeController()
@@ -36,6 +37,7 @@ namespace KRMManagementTree.Controllers
         {
             if (employees != null)
             {
+                _employeeService = new EmployeeService();
                 // initialise list
                 Employees = new List<Employees>();
                 var index = 1;
@@ -53,13 +55,13 @@ namespace KRMManagementTree.Controllers
                         if (!ValidEmployee(employee))
                             break;
 
-                        Employees.Add(Create(employee));
+                        Employees.Add(CreateNewEmployee(employee));
                         index++;
                         continue;
                     }
 
                     if (ValidEmployee(employee))
-                        Employees.Add(Create(employee));
+                        Employees.Add(CreateNewEmployee(employee));
                 }
 
                 Employees.Sort();
@@ -129,8 +131,8 @@ namespace KRMManagementTree.Controllers
         }
 
         // -- would be set up using constructor injection, service to create new employee
-        public Employees Create(EmployeeDto dto) =>
-            Create(dto);
-        
+        public Employees CreateNewEmployee(EmployeeDto dto) =>
+             _employeeService.CreateNewEmployee(dto);
+
     }
 }
