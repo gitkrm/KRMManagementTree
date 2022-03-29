@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KRMManagementTree", "KRMMan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagementTreeUTest", "ManagementTreeUTest\ManagementTreeUTest.csproj", "{8B26BA1B-AF1F-4EA2-BE23-203A7F775D1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dto", "Dto\Dto.csproj", "{C3B5C108-F693-4E91-932B-728ED24A8B36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8B26BA1B-AF1F-4EA2-BE23-203A7F775D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B26BA1B-AF1F-4EA2-BE23-203A7F775D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B26BA1B-AF1F-4EA2-BE23-203A7F775D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3B5C108-F693-4E91-932B-728ED24A8B36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3B5C108-F693-4E91-932B-728ED24A8B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3B5C108-F693-4E91-932B-728ED24A8B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B5C108-F693-4E91-932B-728ED24A8B36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

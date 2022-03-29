@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using KRMManagementTree.Controllers;
+using System;
 
 namespace KRMManagementTree
 {
@@ -10,6 +7,13 @@ namespace KRMManagementTree
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Example Management Tree");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+
+            Console.WriteLine($"{new EmployeeController().DisplayManagementTable()}");
+
+            Console.ReadKey();
         }
     }
 }
